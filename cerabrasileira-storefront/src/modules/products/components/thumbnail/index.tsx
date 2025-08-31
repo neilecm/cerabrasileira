@@ -1,7 +1,7 @@
 import { Container, clx } from "@medusajs/ui"
 import Image from "next/image"
 import React from "react"
-import { HttpTypes } from "@medusajs/types"
+import type { HttpTypes } from "@medusajs/types"
 
 import PlaceholderImage from "@modules/common/icons/placeholder-image"
 
