@@ -24,3 +24,16 @@ export const convertToLocale = ({
       }).format(amount)
     : amount.toString()
 }
+
+export const formatCurrency = (
+  amount: number,
+  currencyCode: string,
+  locale = "en-US"
+) => {
+  return currencyCode && !isEmpty(currencyCode)
+    ? new Intl.NumberFormat(locale, {
+        style: "currency",
+        currency: currencyCode,
+      }).format(amount)
+    : amount.toString()
+}
